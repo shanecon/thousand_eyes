@@ -35,6 +35,7 @@ def alert_names(active_alerts):
         for alert_1 in active_alerts['alert']:
             for alert_2 in alert_1['agents']:
                 print alert_2['agentName']
+                print alert_2['metricsAtStart']
     else:
         print "No Active Alerts"
 
